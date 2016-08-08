@@ -358,8 +358,98 @@
       </div>
     </div>
     <div class="c-content-box c-size-md c-no-padding c-bg-white">
-      <!-- История-->
-
+      <div class="container">
+        <div id="owl-historie" class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="img">
+            <img class="lazyOwl" data-dot="1921" alt="" src="http://www.starmix.de/sites/default/files/historie/historie_1921_0.jpg" style="display: inline;">
+          </div>
+          <div class="text">
+            <p>Foundation of the company "Elektrotechnische Spezialfabrik für Staubsauger und Gebläse" by Robert Schöttle in Stuttgart.&nbsp;</p>
+            <p>Creating the "VENTUS", the company is one of the first vacuum-cleaner-manufacturers in Germany.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img class="lazyOwl" data-dot="1925" alt="" style="display: inline;" src="http://www.starmix.de/sites/default/files/historie/historie_1925.jpg">
+          </div>
+          <div class="text">
+            <p>The company is renamed as "ELECTROSTAR" and develops the first hot-air hand-dryer worldwide. Already at that time 70 % of the products are exported into 49 countries.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img class="lazyOwl" data-dot="1928-45" alt="" style="display: inline;" src="http://www.starmix.de/sites/default/files/historie/historie_1928-1945.jpg">
+          </div>
+          <div class="text">
+            <p>The company ELECTROSTAR Schöttle GmbH &amp; Co. moves, with inventory and the total of 30 employees th the today's location Reichenbach/Fils.&nbsp;</p>
+            <p>Until 1945 the number of employees has increased to 150.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img class="lazyOwl" data-dot="1948" alt="" style="display: inline;" src="http://www.starmix.de/sites/default/files/historie/historie_1948.jpg">
+          </div>
+          <div class="text">
+            <p>Der Starmix: die erste schnelllaufende Küchenmaschine kommt auf den Markt, ein echter Verkaufsschlager, der in der Wochenschau "Welt im Bild" präsentiert wird und zum Symbol des deutschen Wirtschaftswunders wird.&nbsp;</p>
+            <p>Der Markenname "starmix" wird geboren.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img">
+            <img class="lazyOwl" data-dot="1956-59" alt="" style="display: inline;" src="http://www.starmix.de/sites/default/files/historie/historie_1956_0.jpg">
+          </div>
+          <div class="text">
+            <p>The first multi-function vacuum cleaners and upright vacuum cleaners come into shops. Meanwhile the company employs already 650 employees.&nbsp;</p>
+            <p>The foundation stone of the new building is placed.</p>
+          </div>
+        </div>
+      <div class="item">
+        <div class="img">
+          <img class="lazyOwl" data-dot="1977" data-src="http://www.starmix.de/sites/default/files/historie/historie_1977_0.jpg" alt="" style="display: none;">
+        </div>
+        <div class="text">
+          <p>1977 Robert Schöttle jun. enters the company in the 3rd generation.&nbsp;</p>
+          <p>In the years between there were introduced several new developments in the hand dryer sector and the first industrial vacuum cleaner with filter cleaning is developed.</p>
+          <p>The enormous degree of fame of the starmix brand was going beyond the fame of the company brand "Electrostar". Back-to-back all products of Electrostar were getting the starmix signet consequently.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img class="lazyOwl" data-dot="1997-00" data-src="http://www.starmix.de/sites/default/files/historie/historie_1997_0.jpg" alt="" style="display: none;">
+        </div>
+        <div class="text">
+          <p>ELECTROSTAR baut das Exportgeschäft mit einem Joint Venture in Peking (China) weiter aus.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img class="lazyOwl" data-dot="2003-08" data-src="http://www.starmix.de/sites/default/files/historie/historie_2003.jpg" alt="" style="display: none;">
+        </div>
+        <div class="text">
+          <p>The Gorovoy family (Algo-Gruppe) becomes a strategic partner in Eastern Europe. Algo takes over 25 % of company shares and increases the shares in 2005 to 51%. Roman Gorovoy takes over the management.</p>
+          <p>By taking over 100% of the shares of ELECTROSTAR Schöttle GmbH Co. KG. the company will be renamed in 2008 to ELECTROSTAR GmbH.</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img class="lazyOwl" data-dot="2010-13" data-src="http://www.starmix.de/sites/default/files/historie/historie-2010.jpg" alt="" style="display: none;">
+        </div>
+        <div class="text">
+          <p>Im Bereich der Elektrowerkzeug-Sauger werden mit der Einführung des ISP neue Maßstäbe auf dem Markt gesetzt - Filterabreinigung ohne Luftstromunterbrechung.&nbsp;</p>
+          <p>Mit der patentierten Druckdifferenzmessung im ISP iPulse, bringt Electrostar 2013 eine bahnbrechende Innovation auf den Markt.&nbsp;</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="img">
+          <img class="lazyOwl" data-dot="2015" data-src="http://www.starmix.de/sites/default/files/historie/historie_2015_0.jpg" alt="" style="display: none;">
+        </div>
+        <div class="text">
+          <p>With a more progressive market presence and more customer orientation, the foundation for the future is laid. The NSG uClean series replaces the previous GS and HS series and bring out a breeze of fresh air to the product portfolio of Starmix.</p>
+        </div>
+      </div>
+      </div>
+      </div>
     </div>
   </div>
 
@@ -475,6 +565,25 @@
       {
           App.init(); // init core    
       });
+
+    (function ($) {
+      $(document).ready(function() {
+        $("#owl-historie").owlCarousel({
+          afterInit: customPager,
+          lazyLoad: true,
+          singleItem: true
+        });
+
+        function customPager() {
+          $.each(this.owl.userItems, function(i) {
+            var dataDot = $(this).find("img").data("dot");
+            var paginationLinks = $(".owl-controls .owl-pagination .owl-page");
+            $(paginationLinks[i]).append(dataDot);
+          });
+        }
+      });
+    })(jQuery);
+
   </script>
 </body>
 </html>
